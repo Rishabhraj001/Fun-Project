@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Memories</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+     <div class="gsap">
+         <h1>Something for You 🥰</h1>
+    <div class="gifts">
+      <div onclick="next()" id="gift" >
+        <img id="img" src="assets/images/gift2.gif" alt="heart" width="170px" height="140px">
+        <h4>Gift1</h4>
+      </div>
+      <div  onclick="next1()" id="gift1">
+        <img id="img" src="assets/images/gift1.gif" alt="heart" width="170px" height="140px">
+        <h4>Gift2</h4>
+      </div>
+      <div  onclick="next2()" id="gift2">
+        <img id="img" src="assets/images/gift3.gif" alt="heart" width="170px" height="140px">
+        <h4>Gift3</h4>
+      </div>
+    </div>
+   
+    <button id="try" onclick="gift()">Try these</button>
+     </div>
+    
+
+    
+  </div>
+  </div>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
