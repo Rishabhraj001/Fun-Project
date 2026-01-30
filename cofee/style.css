@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+#first{
+    
+    position: relative;
+    width: 100%;
+    height: 780px;
+    background-image: url("./images/cream-color-gradient-background-free-photo.jpg");
+    background-color: lab(91.92% -5.95 20.2);
+    overflow: hidden;
+}
+
+#nav{
+    
+    position: fixed;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 90px;
+    min-height: 60px;
+    backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1111;
+    width: 100%;
+    height: 50px;
+    
+}
+#three{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+#links {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+ 
+}
+#links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    opacity: 0.95;
+}
+#three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-family: "Emilys Candy", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    gap: 0;
+   
+   
+  
+    
+}
+#logo img{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+  
+  
+    
+}
+#logo h5{
+    font-weight: bolder;
+    font-size: 10px;
+    color: white;
+    margin-left: 5px;
+}
+#logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+  
+}
+#logo-text h5{
+    font-weight: bolder;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    margin-left: 2px;
+    letter-spacing: -0.5px;
+    height: 12px;
+}
+#left-lower{
+    font-family: "Emilys Candy", serif;
+    margin-left: 76px;
+    display: flex;
+    flex-direction: column;
+    height: 690px;
+   
+    
+    width: fit-content;
+    justify-content: end;
+    
+    
+}
+#text{
+    max-width: 600px;
+    line-height: 1;
+}
+#text h1{
+    font:bolder;
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#box img{
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+#shop-now{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 111, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+#hero{
+    font-family: "Emilys Candy", serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#right-top{
+    display: flex;
+    gap: 50px;
+    padding-top: 105px;
+    padding-right: 150px;
+}
+#right-top h2, #right-top h5{
+    letter-spacing: -0.3px;
+    line-height: 1;
+}
+
+#overlayImgorange{
+    position: absolute;
+    top: 40%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    rotate: 0deg;
+    z-index: 1000;
+    
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+#overlayImgbrown{
+    position: fixed;
+    top: 54%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    rotate: 10deg;
+    z-index: 1000;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+    
+}
+#overlayImggold{
+    position: absolute;
+    top: 38%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    rotate: 19deg;
+    z-index: 1000;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+    
+    
+}
+#overlayImgred{
+    position: absolute;
+    top: 6%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    rotate: 2deg;
+    z-index: 1000;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+    
+    
+}
+#second{
+    font-family: "Creepster", system-ui;
+    position: relative;
+    width: 100%;
+    height: 800px;
+   background-image: url("./images//cream-color-gradient-background-free-photo.jpg");
+    
+}
+#layered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font:2000;
+    letter-spacing: -5.5px;
+    line-height: 1.2;
+    color: rgb(107, 59, 15);
+    
+    padding-top: 30px;
+    
+    
+   
+}
+#text1,#text3{
+    
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    gap: 28px;
+    
+
+}
+#text1 div,#text3 div{
+    height: 85px;
+    width: 200px;
+    border-radius: 45px;
+    
+}
+#text1 div img,#text3 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px;
+    
+}
+
+#sticker1{
+    position: absolute;
+    top: 32%;
+    left: 14%;
+    width: 168px;
+    height: auto;
+    object-fit: cover;
+    z-index: 1005;
+     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+#sticker2{
+    position: absolute;
+    top: 20%;
+    left: 66%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    z-index: 1005;
+     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+#sticker3{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    z-index: 1005;
+     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+#sticker4{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    z-index: 100;
+     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+#title{
+    padding-left: 90px;
+    padding-right: 80px;
+    padding-top: 40px;
+     font-family: "Emilys Candy", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration:dotted;
+}
+#front{
+    z-index: 33535;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   background: radial-gradient(circle, #3f2924 0%, #21130D 100%);
+}
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 9999;
+    pointer-events: none; /* Allows clicking through once they open */
+}
+
+.panel {
+    width: 50%;
+    height: 100%;
+   background: radial-gradient(circle, #3f2924 0%, #21130D 100%);
+}
+.left-panel {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+.right-panel{
+    display: flex;
+    justify-content: flex-start;
+     align-items: center;
+     
+    
+}
+.loader-wrapper img{
+    
+    height: 300px;
+    
+}
+
+
+
+
