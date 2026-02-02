@@ -21,6 +21,7 @@
     height: 80px;
     font-family: "DynaPuff", system-ui;
     z-index: 9999;
+      backdrop-filter: blur(10px); 
 
 }
 
@@ -125,6 +126,7 @@
     align-items: center;
     height: 350px;
     width: 380px;
+    cursor: pointer;
 }
 
 .slider-track img {
@@ -170,13 +172,14 @@ button {
 }
 #left-img{
     margin-top: 190px;
-    height: 700px;
+    height: 750px;
+    opacity: 2;
 }
 #upper-img{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 59%;
-    left: 39%;
+    top: 69%;
+    left: 35%;
     z-index: 2222;
     height: 540px;
     opacity: 0.4;

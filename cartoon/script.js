@@ -1,10 +1,47 @@
 const track = document.querySelector(".slider-track");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
+const images = document.querySelectorAll("img")
 
 let index = 0;
 const totalImages = 10;
 const imageWidth = 500; // Same as CSS width
+
+gsap.from("#nav",{
+    opacity:0,
+    y:-100,
+    duration:0.5
+})
+gsap.from(" img",{
+    opacity:0,
+    scale:0.5,
+    duration:0.5
+})
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    document.getElementById("second").scrollIntoView({
+      behavior: "smooth"
+    });
+    gsap.from(" img",{
+    opacity:0,
+    scale:0.5,
+    duration:0.5
+})
+gsap.from("#heading",{
+        opacity:0,
+        y:-50,
+        duration:0.5,
+    })
+    gsap.from("#pokemon-description",{
+        opacity:0,
+        x:50,
+        duration:0.5,
+    })
+  });
+  
+});
+
+
 
 nextBtn.addEventListener("click", () => {
     index++;
