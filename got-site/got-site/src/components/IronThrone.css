@@ -1,0 +1,73 @@
+.throne-section {
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 50%, #15110d 0%, var(--ink) 70%);
+  overflow: hidden;
+}
+
+.throne-glow-back {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 50vw;
+  height: 50vw;
+  max-width: 700px;
+  max-height: 700px;
+  transform: translate(-50%, -50%) scale(1);
+  background: radial-gradient(circle, rgba(201, 166, 70, 0.18), transparent 70%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.throne-heading {
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  margin: 0.4rem 0 4vh;
+  color: var(--parchment);
+}
+
+.throne-art {
+  position: relative;
+  width: min(560px, 90vw);
+  height: 220px;
+  margin: 0 auto 4vh;
+}
+
+.sword {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #cfd3d6, #6c7278 60%, #3a3d42);
+  transform-origin: bottom center;
+  border-radius: 1px;
+  box-shadow: 0 0 6px rgba(255,255,255,0.15);
+}
+
+.throne-seat {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(108,114,120,0.25), rgba(20,20,22,0.6));
+  clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.throne-text {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.throne-line {
+  color: var(--parchment-dim);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 0 0 1.1rem;
+}
+
+.throne-line-em {
+  color: var(--gold);
+  font-style: italic;
+}

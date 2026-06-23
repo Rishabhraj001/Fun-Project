@@ -1,0 +1,62 @@
+.kingdoms-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--ink) 0%, #100b09 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kingdoms-heading {
+  padding: 0 8vw;
+  margin-bottom: 4vh;
+  flex-shrink: 0;
+}
+
+.kingdoms-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0.3rem 0 0;
+}
+
+.kingdoms-track {
+  display: flex;
+  gap: 4vw;
+  padding: 0 8vw;
+  width: max-content;
+  will-change: transform;
+}
+
+.kingdom-card {
+  flex: 0 0 auto;
+  width: min(380px, 78vw);
+  height: 48vh;
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  border-radius: 2px;
+  padding: 2.4rem 2rem;
+  background: linear-gradient(160deg, rgba(255,255,255,0.03), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.kingdom-sigil {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  filter: grayscale(0.2);
+}
+
+.kingdom-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  color: var(--parchment);
+}
+
+.kingdom-card p {
+  color: var(--parchment-dim);
+  line-height: 1.55;
+  font-size: 1.02rem;
+}
