@@ -1,0 +1,103 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.4rem 0 0;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10, 10, 13, 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.6rem 0.6rem 0.6rem 1.4rem;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar__logo-mark {
+  font-family: var(--font-display);
+  background: var(--latent);
+  color: var(--ink);
+  font-size: 0.85rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.navbar__logo-text {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.navbar__logo-text em { color: var(--latent); font-style: normal; }
+
+.navbar__links--desktop {
+  display: flex;
+  gap: 2.2rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.navbar__links--desktop a {
+  position: relative;
+  padding: 0.4rem 0;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.navbar__links--desktop a:hover { opacity: 1; }
+.navbar__links--desktop a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -2px;
+  width: 0; height: 2px;
+  background: var(--mic-red);
+  transition: width 0.25s ease;
+}
+.navbar__links--desktop a:hover::after { width: 100%; }
+
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.6rem 0.7rem;
+}
+.navbar__burger span {
+  width: 22px; height: 2px; background: var(--paper);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.navbar__burger span.is-open:first-child { transform: translateY(3.5px) rotate(45deg); }
+.navbar__burger span.is-open:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+
+.navbar__links--mobile {
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  max-height: 0;
+  overflow: hidden;
+  background: var(--ink-soft);
+  margin: 0.6rem 1.5rem 0;
+  border-radius: 18px;
+  transition: max-height 0.3s ease;
+}
+.navbar__links--mobile.is-open { max-height: 260px; }
+.navbar__links--mobile a {
+  padding: 1rem 1.4rem;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .navbar__links--desktop { display: none; }
+  .navbar__burger { display: flex; }
+  .navbar__links--mobile { display: flex; }
+}
