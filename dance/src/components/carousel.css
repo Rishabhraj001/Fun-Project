@@ -1,0 +1,314 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#070707;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   Section
+=========================== */
+
+.carousel-section{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+   black;
+}
+
+/* ===========================
+   Background Glow
+=========================== */
+
+.carousel-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:black;
+
+    filter:blur(180px);
+
+    top:-200px;
+    left:-150px;
+
+    z-index:0;
+}
+
+.carousel-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    border-radius:50%;
+
+    
+    bottom:-250px;
+    right:-100px;
+
+    z-index:0;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.carousel-title{
+
+    color:white;
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:70px;
+
+    letter-spacing:2px;
+
+    z-index:10;
+}
+
+/* ===========================
+   Carousel
+=========================== */
+
+.carousel{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1300px;
+
+    height:520px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    perspective:2000px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.video-card{
+
+    position:absolute;
+
+    width:420px;
+
+    height:720px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 25px 80px rgba(0,0,0,.55);
+
+    transition:
+    box-shadow .4s;
+}
+
+.video-card:hover{
+
+    box-shadow:
+    0 40px 100px rgba(0,0,0,.7);
+}
+
+/* ===========================
+   Video
+=========================== */
+
+.video {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+/* ===========================
+   Overlay
+=========================== */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:40px;
+
+    background:
+
+    linear-gradient(
+    transparent,
+    rgba(0,0,0,.75));
+
+}
+
+.overlay h2{
+
+    color:white;
+
+    font-size:2.4rem;
+
+    font-weight:600;
+}
+
+/* ===========================
+   Controls
+=========================== */
+
+.controls{
+
+    display:flex;
+
+    gap:22px;
+
+    margin-top:60px;
+
+    z-index:100;
+}
+
+/* ===========================
+   Glass Buttons
+=========================== */
+
+.control-btn{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.control-btn:hover{
+
+    background:white;
+
+    color:black;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1000px){
+
+.carousel{
+
+height:420px;
+
+}
+
+.video-card{
+
+width:520px;
+
+height:320px;
+
+}
+
+.carousel-title{
+
+font-size:3rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.carousel{
+
+height:300px;
+
+}
+
+.video-card{
+
+width:340px;
+
+height:220px;
+
+}
+
+.carousel-title{
+
+font-size:2.2rem;
+
+text-align:center;
+
+}
+
+.control-btn{
+
+width:55px;
+height:55px;
+
+}
+
+}
