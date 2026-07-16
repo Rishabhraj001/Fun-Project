@@ -2,8 +2,8 @@
 // Single source of truth for every bike shown across the site.
 // Replace the `image` / `gallery` paths with real assets in src/assets/images.
 // Nothing else needs to change — every section renders from this array.
-import hunterImage from '../assets/images/hunter.png';
-import hunterImage1 from '../assets/images/hunter.png';
+import hunterImage from '../assets/images/Hunter.png';
+import hunterImage1 from '../assets/images/Hunter.png';
 import classicImage from '../assets/images/classic.png';
 import meteorImage from '../assets/images/meteor.png';
 import bulletImage from '../assets/images/bullet.png';
