@@ -189,9 +189,9 @@ const bikes = [
     price: '₹3,25,000',
     image: interceptorImage,
     gallery: [
-      interceptorImage1,
-      interceptorImage2,
-      interceptorImage3,
+      interceptorImage,
+      interceptorImage,
+      interceptorImage,
     ],
     variants: ['Baker Express', 'Orange Crush', 'Ravishing Red'],
     features: ['Parallel Twin', 'Slip Assist Clutch', 'Dual Discs', 'Pea-Shooter Exhaust'],
