@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useScrollVideo } from '../../hooks/useScrollVideo';
 import { gsap, ScrollTrigger } from '../../utils/animations';
 import './ScrollVideo.css';
+import video from '../../assets/videos/craft.mp4';
 
 const MOMENTS = [
   { title: 'Forged, Not Assembled', body: 'Every frame starts as raw steel before it becomes a motorcycle.' },
@@ -58,7 +59,7 @@ const ScrollVideo = () => {
        <video
   ref={videoRef}
   className="scroll-video__video"
-  src="/src/assets/videos/craft.mp4"
+  src={video}
   autoPlay
   muted
   loop

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useScrollVideo } from '../../hooks/useScrollVideo';
 import { gsap, ScrollTrigger } from '../../utils/animations';
 import './Hero.css';
+import video from '../../assets/videos/hero4.mp4';
 
 // Five hero headlines, each owns a slice of the 0-1 scroll progress range.
 const HEADLINES = [
@@ -106,7 +107,7 @@ const Hero = () => {
         <video
           ref={videoRef}
           className="hero__video"
-          src="/src/assets/videos/hero4.mp4"
+          src={video}
           autoPlay
           muted
           loop

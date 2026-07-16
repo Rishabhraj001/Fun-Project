@@ -2,16 +2,29 @@
 // Single source of truth for every bike shown across the site.
 // Replace the `image` / `gallery` paths with real assets in src/assets/images.
 // Nothing else needs to change — every section renders from this array.
-
+import hunterImage from '../assets/images/hunter.png';
+import hunterImage1 from '../assets/images/hunter.png';
+import classicImage from '../assets/images/classic.png';
+import meteorImage from '../assets/images/meteor.png';
+import bulletImage from '../assets/images/bullet.png';
+import himalayanImage from '../assets/images/himalayan.png';
+import bulletImage1 from '../assets/images/bullet.png';
+import bulletImage2 from '../assets/images/bullet.png';
+import meteorImage1 from '../assets/images/meteor.png';
+import meteorImage2 from '../assets/images/meteor.png';
+import interceptorImage from '../assets/images/interceptor.png';
+import himalayanImage1 from '../assets/images/himalayan.png';
+import himalayanImage2 from '../assets/images/himalayan.png';
+import himalayanImage3 from '../assets/images/himalayan.png';
 const bikes = [
   {
     id: 'hunter-350',
     name: 'Hunter 350',
     tagline: 'Born for the city. Built to escape it.',
     price: '₹1,49,900',
-    image: '/src/assets/images/hunter.png',
+    image: hunterImage,
     gallery: [
-      '/src/assets/images/hunter-350-1.png',
+      hunterImage1,
       '/src/assets/images/hunter-350-2.png',
       '/src/assets/images/hunter-350-3.png',
     ],
@@ -42,7 +55,7 @@ const bikes = [
     name: 'Classic 350',
     tagline: 'The silhouette that never left.',
     price: '₹1,93,000',
-    image: '/src/assets/images/classic.png',
+    image: classicImage,
     gallery: [
       '/src/assets/images/classic-350-1.png',
       '/src/assets/images/classic-350-2.png',
@@ -75,11 +88,11 @@ const bikes = [
     name: 'Meteor 350',
     tagline: 'Effortless miles, easy mind.',
     price: '₹2,19,000',
-    image: '/src/assets/images/meteor.png',
+    image: meteorImage,
     gallery: [
-      '/src/assets/images/meteor.png',
-      '/src/assets/images/meteor1.png',
-      '/src/assets/images/meteor-350-3.png',
+      meteorImage,
+      meteorImage1,
+      meteorImage2,
     ],
     variants: ['Fireball', 'Stellar', 'Supernova'],
     features: ['Tripper Navigation', 'Semi-Digital Console', 'USB Charger', 'LED Headlamp'],
@@ -108,11 +121,11 @@ const bikes = [
     name: 'Bullet 350',
     tagline: 'The original. Still running.',
     price: '₹1,73,000',
-    image: '/src/assets/images/bullet.png',
+    image: bulletImage,
     gallery: [
-      '/src/assets/images/bullet-350-1.png',
-      '/src/assets/images/bullet-350-2.png',
-      '/src/assets/images/bullet-350-3.png',
+      bulletImage,
+      bulletImage1,
+      bulletImage2,
     ],
     variants: ['Standard', 'Military'],
     features: ['Case Type Gearbox', 'Twinburst Headlamp', 'Chrome Detailing', 'Wide Tyres'],
@@ -141,11 +154,11 @@ const bikes = [
     name: 'Himalayan 450',
     tagline: 'The road ends. You don\u2019t.',
     price: '₹2,85,000',
-    image: '/src/assets/images/himalayan.png',
+    image: himalayanImage,
     gallery: [
-      '/src/assets/images/himalayan-1.png',
-      '/src/assets/images/himalayan-2.png',
-      '/src/assets/images/himalayan-3.png',
+      himalayanImage1,
+      himalayanImage2,
+      himalayanImage3,
     ],
     variants: ['Kaza Brown', 'Slate Himalayan Salt', 'Hanle Black'],
     features: ['Showa Suspension', 'TFT Display', 'Turn-by-Turn Nav', 'Switchable ABS'],
@@ -174,11 +187,11 @@ const bikes = [
     name: 'Interceptor 650',
     tagline: 'Two cylinders. Zero pretense.',
     price: '₹3,25,000',
-    image: '/src/assets/images/interceptor.png',
+    image: interceptorImage,
     gallery: [
-      '/src/assets/images/interceptor-650-1.png',
-      '/src/assets/images/interceptor-650-2.png',
-      '/src/assets/images/interceptor-650-3.png',
+      interceptorImage1,
+      interceptorImage2,
+      interceptorImage3,
     ],
     variants: ['Baker Express', 'Orange Crush', 'Ravishing Red'],
     features: ['Parallel Twin', 'Slip Assist Clutch', 'Dual Discs', 'Pea-Shooter Exhaust'],
