@@ -1,0 +1,39 @@
+.collection {
+  position: relative;
+  padding: 120px 0;
+  background: var(--color-steel);
+}
+
+.collection__eyebrow {
+  display: block;
+}
+
+.collection__title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 14px 0 12px;
+}
+
+.collection__subtitle {
+  color: var(--color-ash);
+  max-width: 520px;
+  margin-bottom: 60px;
+  font-size: 1rem;
+}
+
+.collection__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 1100px) {
+  .collection__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .collection__grid {
+    grid-template-columns: 1fr;
+  }
+}

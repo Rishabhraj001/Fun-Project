@@ -1,0 +1,209 @@
+/* ==========================================================================
+   GLOBAL DESIGN TOKENS — Royal Enfield Cinematic
+   Palette:   #0D0D0D (void)   #161616 (steel)   #C48B3A (brass)
+              #2A2A2A (line)   #8C8C8C (ash)      #F5F1E8 (bone-white text)
+   Type:      Oswald (display / condensed, industrial)
+              Inter (body, readable)
+              JetBrains Mono (telemetry / spec digits)
+   ========================================================================== */
+
+:root {
+  /* colors */
+  --color-void: #0d0d0d;
+  --color-steel: #161616;
+  --color-steel-light: #1e1e1e;
+  --color-brass: #c48b3a;
+  --color-brass-dim: #8a611f;
+  --color-line: #2a2a2a;
+  --color-ash: #8c8c8c;
+  --color-bone: #f5f1e8;
+  --color-white: #ffffff;
+
+  /* gradients */
+  --gradient-fade-bottom: linear-gradient(180deg, transparent 0%, var(--color-void) 100%);
+  --gradient-fade-top: linear-gradient(0deg, transparent 0%, var(--color-void) 100%);
+  --gradient-brass: linear-gradient(135deg, #e0aa5c 0%, #c48b3a 50%, #8a611f 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+  /* typography */
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* layout */
+  --container-max: 1440px;
+  --edge-padding: clamp(20px, 5vw, 80px);
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 28px;
+
+  /* shadows */
+  --shadow-luxury: 0 30px 80px -20px rgba(0, 0, 0, 0.7);
+  --shadow-brass-glow: 0 0 40px -8px rgba(196, 139, 58, 0.45);
+
+  /* motion */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: var(--color-void);
+}
+
+body {
+  background: var(--color-void);
+  color: var(--color-bone);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-void);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brass-dim);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--edge-padding);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 34px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: transform 0.4s var(--ease-smooth), box-shadow 0.4s var(--ease-smooth), background 0.4s var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-brass);
+  color: var(--color-void);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-brass-glow);
+}
+
+.btn-outline {
+  border: 1px solid rgba(245, 241, 232, 0.3);
+  color: var(--color-bone);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-brass);
+  color: var(--color-brass);
+  transform: translateY(-2px);
+}
+
+/* magnetic button ripple */
+.btn .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(0);
+  animation: ripple-anim 0.6s var(--ease-smooth);
+  pointer-events: none;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}
+
+.glass-panel {
+  background: var(--gradient-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
